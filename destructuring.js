@@ -22,7 +22,7 @@ var carDetails = {
 */
 
 //Code Here
-
+let {color, make, model, year} = carDetails;
 
 
 ////////// PROBLEM 2 //////////
@@ -35,7 +35,7 @@ var carDetails = {
 
 function greeting( obj ) {
   //Code Here
-  
+  let {title, firstName, lastName} = obj;
   // Do not edit the code below.
   return 'Hello, ' + title + ' ' + firstName + ' ' + lastName + '!';
   // Do not edit the code above.
@@ -54,7 +54,10 @@ function greeting( obj ) {
 */
 
 //Code Here
-
+function totalPopulation(obj) {
+  let {utah, california, texas, arizona} = obj;
+  return utah + california + texas + arizona;  
+}
 
 
 ////////// PROBLEM 4 //////////
@@ -68,7 +71,14 @@ function greeting( obj ) {
 */
 
 //Code Here
-
+function ingredients(obj) {
+  let {carb, fat, protein} = obj;
+  let arr = [];
+  arr.push(carb);
+  arr.push(fat);
+  arr.push(protein);  
+  return arr;
+}
 
 
 ////////// PROBLEM 5 //////////
@@ -86,8 +96,13 @@ function greeting( obj ) {
 */
 
 //Code Here
-
-
+function largeNumbers(obj) {
+  let {first, second, third} = obj;
+  console.log(typeof first);
+  let arr = [first, second, third];
+  return Math.min(...arr);
+  
+}
 
 ////////// PROBLEM 6 //////////
 
@@ -98,5 +113,19 @@ function greeting( obj ) {
 */
 
 //Code Here
-
+function numberGroups(obj) {
+  let {a,b,c} = obj;
+  alen = a.length;
+  blen = b.length;
+  clen = c.length;
+  if(clen > alen && clen > blen){
+    return c;
+  }
+  else if (blen > alen && blen > clen){
+    return b;
+  }
+  else{
+    return a;
+  }
+}
 

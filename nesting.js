@@ -171,9 +171,10 @@ function recordCleaner() {
   arr.map(function(val, i){
     val.atFaultForAccident = false;
   });
-
+  
 }
 
+recordCleaner();
 
 ////////// PROBLEM 5 //////////
 
